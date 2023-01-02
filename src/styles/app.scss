@@ -15,7 +15,7 @@ body {
   border: 1px solid #ebebeb;
 
   &__header {
-    background-color: #db4c3f;
+    background-color: #2d87f6;
     padding: 20px 30px;
 
     h4 {
@@ -101,7 +101,7 @@ body {
 
         #{$self}-check,
         #{$self}-check:hover {
-          background-color: #db4c3f;
+          background-color: #2d87f6;
         }
       }
 
@@ -109,7 +109,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid #db4c3f;
+        border: 2px solid #2d87f6;
         border-radius: 30px;
         min-width: 24px;
         height: 24px;

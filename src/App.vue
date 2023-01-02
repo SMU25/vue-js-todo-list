@@ -1,22 +1,20 @@
 <script lang="ts" setup>
-import { ref } from "vue";
+import { ref, watch } from "vue";
 import AddTodo from "./components/AddTodo/index.vue";
 import TodoItem from "./components/TodoItem/index.vue";
+import { createNumberId } from "./utils/createNumberId";
+import { getItemLocalStorage } from "./utils/localStorage/getItemLocalStorage";
+import { setItemLocalStorage } from "./utils/localStorage/setItemLocalStorage";
 
 const HEADING = "My todos";
 
-let id = 0;
-
-const todoList = ref([
-  { id: ++id, text: "213", isDone: false },
-  { id: ++id, text: "sadasd", isDone: true },
-]);
+const todoList = ref(getItemLocalStorage());
 
 const addTodoItem = (text: string) => {
   if (text) {
-    const newTodoItem = { id: ++id, isDone: false, text };
+    const newTodoItem = { id: createNumberId(), isDone: false, text };
 
-    todoList.value.push(newTodoItem);
+    todoList.value = [...todoList.value, newTodoItem];
   } else {
     alert("Please, enter your todo!");
   }
@@ -37,6 +35,8 @@ const updateTodoItemText = (id: number, value: string) => {
 const removeTodoItem = (id: number) => {
   todoList.value = todoList.value.filter((item) => item.id !== id);
 };
+
+watch(todoList, () => setItemLocalStorage(todoList.value));
 </script>
 
 <template>
