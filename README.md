@@ -1,3 +1,5 @@
+## Deployed: [Vue Todo list](https://vue-js-todo-list.vercel.app/)
+
 # vue-js-to-do-list
 ![image](https://user-images.githubusercontent.com/65986569/210262198-368e1814-1cd7-4cdf-9899-088d979c3d7e.png)
 
