@@ -24,8 +24,8 @@ const addNewTodoItem = () => {
   <div class="todo__add-field">
     <input
       type="text"
-      v-model="inputValue"
       :placeholder="INPUT_PLACEHOLDER"
+      v-model="inputValue"
       @keyup.enter="addNewTodoItem"
     />
     <button class="todo__add-field-button" @click="addNewTodoItem">
