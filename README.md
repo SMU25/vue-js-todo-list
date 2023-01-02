@@ -2,7 +2,7 @@
 
 # vue-js-todo-list
 
-![image](https://user-images.githubusercontent.com/65986569/210262198-368e1814-1cd7-4cdf-9899-088d979c3d7e.png)
+![image](https://user-images.githubusercontent.com/65986569/210266132-be44f366-a723-4dc2-bc18-10bb943f4c1f.png)
 
 ## Project setup
 
