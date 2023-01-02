@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { ref, toRefs, watch } from "vue";
-import Button from "@/components/Button/index.vue";
 import IconTrash from "@/components/icons/IconTrash.vue";
 
 type VoidFuncWithIdValue = (id: number) => void;
@@ -25,12 +24,12 @@ watch(inputValue, () => updateTodoItemText.value(id.value, inputValue.value));
 
 <template>
   <div :class="['todo__list-item', { 'todo__list-item--completed': isDone }]">
-    <Button class-name="todo__list-item-check" @click="checkTodoItem(id)">
+    <button class="todo__list-item-check" @click="checkTodoItem(id)">
       <img v-if="isDone" src="@/assets/check.svg" />
-    </Button>
+    </button>
     <input class="todo__list-item-input" v-model="inputValue" />
-    <Button class-name="todo__list-item-remove" @click="removeTodoItem(id)">
+    <button class="todo__list-item-remove" @click="removeTodoItem(id)">
       <IconTrash />
-    </Button>
+    </button>
   </div>
 </template>
