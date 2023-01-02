@@ -1,6 +1,5 @@
 # vue-js-to-do-list
-![image](https://user-images.githubusercontent.com/65986569/210261997-ec9a6445-b93c-405a-a0ab-53c5bc2b4874.png)
-
+![image](https://user-images.githubusercontent.com/65986569/210262198-368e1814-1cd7-4cdf-9899-088d979c3d7e.png)
 
 ## Project setup
 
