@@ -43,6 +43,11 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  background: none;
+}
+
 @mixin noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
