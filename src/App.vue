@@ -3,12 +3,12 @@ import { ref, watch } from "vue";
 import AddTodo from "./components/AddTodo/index.vue";
 import TodoItem from "./components/TodoItem/index.vue";
 import { createNumberId } from "./utils/createNumberId";
-import { getItemLocalStorage } from "./utils/localStorage/getItemLocalStorage";
-import { setItemLocalStorage } from "./utils/localStorage/setItemLocalStorage";
+import { getLocalStorageItems } from "./utils/localStorage/getLocalStorageItems";
+import { setLocalStorageItems } from "./utils/localStorage/setLocalStorageItems";
 
 const HEADING = "My todos";
 
-const todoList = ref(getItemLocalStorage());
+const todoList = ref(getLocalStorageItems());
 
 const addTodoItem = (text: string) => {
   if (text) {
@@ -36,7 +36,7 @@ const removeTodoItem = (id: number) => {
   todoList.value = todoList.value.filter((item) => item.id !== id);
 };
 
-watch(todoList, () => setItemLocalStorage(todoList.value));
+watch(todoList, () => setLocalStorageItems(todoList.value));
 </script>
 
 <template>
