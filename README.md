@@ -22,6 +22,7 @@ The use of TypeScript adds static type checking, enhancing code reliability and 
 
 Overall, my solution meets all the specified requirements and aims to provide users with a convenient interface for managing their tasks.
 
+# 
 ### In Ukrainian (Українською)
 ## Опис завдання:
 Метою завдання було створити простий веб-додаток To-Do List, який дозволяє користувачам додавати, редагувати та видаляти задачі. Основні вимоги полягали у використанні Vue.js для створення компонентів, збереження задач у стані додатку та після перезавантаження сторінки, можливості відзначити виконані задачі, а також у зручній та естетичній верстці.
